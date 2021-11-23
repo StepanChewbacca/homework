@@ -1,13 +1,29 @@
 <html>
   <head>
     <title>Todo App</title>
-    <link
-            href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css"
-            rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+      <link
+              href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css"
+              rel="stylesheet"
+      />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
   </head>
   <body>
+  <div class="wrapper">
+      <h1>TO DO LIST</h1>
+      <div class="todo_list">
+       <input type="text" id="input" />
+        <button class="add">add</button>
+      <button class="clear">clear</button>
+      </div>
+    <ul class="result"></ul>
+    <div>
+        - Left mouse button click to edit <br>
+        - Middle Mouse button click to mark as done <br>
+        - Middle Mouse button click again to make task actual <br>
+        <div class='remove_option' id="Done" style="text-decoration: line-through">- Double click to remove (A dangerous option! Disabled by default! You can activate it simply by clicking on this line!)</div>
+  </div>
+    <script type="text/javascript" src="app.js"></script>
+
   </div>
   <div id="mocha"></div>
   <div id="messages"></div>
@@ -20,7 +36,6 @@
   <script>
       mocha.setup("bdd");
   </script>
-
   <script src="test.spec.js"></script>
   <script>
       mocha.run();

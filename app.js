@@ -13,7 +13,7 @@ button.addEventListener('click', ()  => {
 
 remove.addEventListener('click', markAsDone);
 result.addEventListener('dblclick', removeFromList);
-result.addEventListener('auxclick', markAsDone);
+result.addEventListener('dblclick', markAsDone);
 result.addEventListener('input', ifInput);
 clear.addEventListener('click', clearStorage);
 

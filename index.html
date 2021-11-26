@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+            href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css"
+            rel="stylesheet"
+    />
+    <title>Linked List</title>
+</head>
+
+<body>
+<header>
+    <h1>Linked List</h1>
+</header>
+<main class="container">
+    <div class="container-input">
+        <label for="input-value">Enter list value</label>
+        <input type="text" id="input-value" />
+        <span class="btn -container-add"><button class="btn-add">Add this value</button></span>
+        <span class="btn -container-remove"><button class="btn-remove">Remove this value</button></span>
+        <span class="btn -container-remove"><button class="btn-remove-last">Remove last item</button></span>
+    </div>
+
+    <div class="container-input">
+        <label for="input-value">Enter array of values</label>
+        <input type="text" id="input-array" />
+        <span class="btn -container-add"><button class="btn-add-arr">Add array of list </button></span>
+        <span class="btn -container-remove"><button class="btn-remove-all">Remove all list</button></span>
+    </div>
+    <div class="container-input">
+        <label for="input-value">Searching nodes</label>
+        <input type="text" id="input-index-value" />
+        <span class="btn -container-add"><button class="btn-search-by-index">Search by index</button></span>
+        <span class="btn -container-add"><button class="btn-search-by-value">Search by value</button></span>
+        <label class="search">Your searching</label>
+    </div>
+
+    <div class="my-list"></div>
+
+</main>
+<script src="js/view.js"></script>
+<script src="js/LinkedList.js"></script>
+<script src="js/init.js"></script>
+
+<div id="mocha"></div>
+<div id="messages"></div>
+<div id="fixtures"></div>
+<script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/2.2.2/faker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.0.1/mocha.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/1.4.1/chai.js"></script>
+<script>
+    mocha.setup("bdd");
+</script>
+<script src="test/linkedList.spec.js"></script>
+<script>
+    mocha.run();
+</script>
+
+</body>
+
+</html>

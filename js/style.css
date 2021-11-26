@@ -1,0 +1,57 @@
+.myListValue{
+  margin: 0px 0px 0px 50px;
+  border: 20px chartreuse solid;
+}
+
+label {
+  margin-right: 15px ;
+}
+
+.container-input {
+  margin: 50px;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.myListNext{
+  border: 20px chartreuse solid;
+  margin-right: 50px;
+}
+
+.my-list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.arrow {
+  height: 50px;
+  position: relative;
+  width: 10px;
+  background: black;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.arrow:before {
+  content: " ";
+  width: 10px;
+  background: black;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  transform: rotate(50deg);
+  left: -10px;
+}
+.arrow:after {
+  content: " ";
+  width: 10px;
+  background: black;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  transform: rotate(-50deg);
+  right: -10px;
+}

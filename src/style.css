@@ -1,0 +1,74 @@
+*{
+    text-align: center;
+    overflow: hidden;
+}
+.buttons{
+    margin-bottom: 10px;
+} 
+
+body {
+    margin: 0px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination span.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.pagination span {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.lightbox-wrapper {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index:1004;
+}
+
+.lightbox-photo {
+    cursor:pointer;
+    height:400px;
+    width: 400px;
+    margin: 10px;
+}
+
+.expanded {
+    position:fixed;
+    height:95%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: 1002;
+}
+
+.caption {
+    position:fixed;
+    background: black;
+    color:white;
+    padding:8px;
+    border-radius:5px;
+    font-size:14px;
+    bottom:3%;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:1003;
+}
+
+.overlay {
+    position:fixed;
+    top:0;
+    bottom:0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85;
+    z-index: 1001;
+}

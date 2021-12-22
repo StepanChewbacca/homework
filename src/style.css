@@ -1,0 +1,88 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgb(186, 191, 215);
+}
+
+#mocha {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #3ebf3e;
+  background: #3ebf3e;
+  color: #fff;
+}
+
+.wrapper {
+  height: 100%;
+  width: 500px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: large;
+}
+
+input {
+  margin-bottom: 10px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.add {
+  margin-left: 10px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  width: 75px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.clear {
+  margin-left: 20px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  width: 75px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.task-item.done {
+  background-color: lightgreen;
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
